@@ -1,0 +1,229 @@
+/* eqe.io — minimal, typographic */
+
+:root {
+  --bg: #f9f8f6;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #2a4a8a;
+  --border: #ddd;
+  --max: 720px;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--serif);
+  line-height: 1.7;
+  padding: 3rem 1.5rem;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+/* Nav */
+nav {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+nav .wordmark {
+  font-weight: 700;
+  color: var(--fg);
+  text-decoration: none;
+  margin-right: auto;
+  letter-spacing: 0.05em;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover { color: var(--accent); }
+
+/* Header */
+header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+header .title {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* Body text */
+h2 {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.5rem 0 1rem;
+}
+
+p {
+  margin-bottom: 1.1rem;
+  max-width: 65ch;
+}
+
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover { color: var(--fg); }
+
+/* Links list */
+.link-list {
+  list-style: none;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+}
+
+.link-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.link-list li:first-child { border-top: 1px solid var(--border); }
+
+.link-list .label { color: var(--fg); }
+.link-list .meta { color: var(--muted); font-size: 0.8rem; }
+
+/* Resume specific */
+.resume-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.resume-header h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 0.4rem;
+}
+
+.resume-header .contact {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.2rem;
+}
+
+.resume-header .contact a { color: var(--muted); }
+
+.job {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.job:last-child { border-bottom: none; }
+
+.job-header {
+  font-family: var(--sans);
+  margin-bottom: 0.8rem;
+}
+
+.job-header .company {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.job-header .role {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.job-header .dates {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+ul.bullets {
+  padding-left: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+ul.bullets li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 2rem;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+
+.skills-grid dt {
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.skills-grid dd {
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.edu-block, .patent-block {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.edu-block .school { font-weight: 600; }
+.edu-block .degree { color: var(--muted); }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  nav { flex-wrap: wrap; gap: 1rem; }
+  .skills-grid { grid-template-columns: 1fr; }
+}
