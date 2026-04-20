@@ -222,7 +222,9 @@ ul.bullets {
 
 ul.bullets li {
   margin-bottom: 0.4rem;
-  font-size: 0.95rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 .skills-grid {
