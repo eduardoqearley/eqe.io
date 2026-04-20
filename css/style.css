@@ -55,6 +55,14 @@ nav a {
 
 nav a:hover { color: var(--accent); }
 
+nav .icon-link {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+nav .icon-link svg { display: block; }
+
 /* Header */
 header {
   margin-bottom: 3rem;
