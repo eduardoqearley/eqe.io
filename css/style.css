@@ -203,6 +203,12 @@ a:hover { color: var(--fg); }
   border-bottom: 1px solid var(--border);
 }
 
+.sub-role:first-child {
+  margin-top: 0.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border);
+}
+
 .sub-role:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
