@@ -258,7 +258,8 @@ ul.bullets li {
 
 .languages {
   font-family: var(--sans);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 footer {
