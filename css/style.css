@@ -175,12 +175,14 @@ a:hover { color: var(--fg); }
 
 .job-header .role {
   font-size: 0.88rem;
-  color: var(--muted);
+  font-weight: 600;
+  color: var(--fg);
 }
 
 .job-header .dates {
   font-size: 0.82rem;
-  color: var(--muted);
+  font-weight: 600;
+  color: var(--fg);
 }
 
 .job-intro {
