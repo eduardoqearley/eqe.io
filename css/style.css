@@ -183,6 +183,32 @@ a:hover { color: var(--fg); }
   color: var(--muted);
 }
 
+.job-intro {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.7rem;
+}
+
+.job-meta {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+.sub-role {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.sub-role:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 ul.bullets {
   padding-left: 1.3rem;
   margin-top: 0.5rem;
@@ -219,6 +245,11 @@ ul.bullets li {
 
 .edu-block .school { font-weight: 600; }
 .edu-block .degree { color: var(--muted); }
+
+.languages {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+}
 
 footer {
   margin-top: 4rem;
