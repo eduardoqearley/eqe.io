@@ -1,0 +1,15 @@
+generator:
+  output_dir: src/
+  template_dir: src/openspec_core/templates
+
+parser:
+  spec_dir: openspec/specs
+
+validator:
+  check_docstrings: true
+  check_type_hints: true
+  require_tests: true
+
+logging:
+  level: INFO
+  format: text

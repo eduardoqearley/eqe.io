@@ -1,0 +1,3 @@
+def {{ requirement.title | snake_case }}({% for param in requirement.get_params() %}{{ param }}{% if not loop.last %}, {% endif %}{% endfor %}) -> Any:
+    """{{ requirement.description }}"""
+    pass

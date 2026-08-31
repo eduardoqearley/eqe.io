@@ -1,0 +1,11 @@
+from pydantic import BaseModel
+
+{% for name, fields in sections.items() %}
+class {{ name | title_case }}(BaseModel):
+{% for field, ftype in fields.items() %}    {{ field }}: {{ ftype }}
+{% endfor %}
+
+{% endfor %}
+class AppConfig(BaseModel):
+{% for name in sections.keys() %}    {{ name }}: {{ name | title_case }}
+{% endfor %}
